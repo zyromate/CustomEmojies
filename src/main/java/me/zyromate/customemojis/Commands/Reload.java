@@ -33,7 +33,7 @@ public class Reload implements CommandExecutor {
             plugin.reloadConfig();
             chatListener.loadEmojis();
 
-            Object reloadSuccessMessage = plugin.getConfig().get("CustomEmojis.reload-success");
+            Object reloadSuccessMessage = plugin.getConfig().get("reload-success");
 
             if (reloadSuccessMessage instanceof List<?>) {
                 for (String line : (List<String>) reloadSuccessMessage) {
@@ -52,7 +52,7 @@ public class Reload implements CommandExecutor {
     }
 
     private void sendUsage(CommandSender sender) {
-        List<String> usageMessage = plugin.getConfig().getStringList("CustomEmojis.command-usage");
+        List<String> usageMessage = plugin.getConfig().getStringList("command-usage");
         if (usageMessage == null || usageMessage.isEmpty()) {
             utility.sendMessage(sender, "&cUsage: /customemojis reload");
             return;

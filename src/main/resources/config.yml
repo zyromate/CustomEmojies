@@ -1,31 +1,32 @@
-CustomEmojis:
-  command-usage:
-    - "&6_____________.[ &2Custom Emojis &6]._____________"
-    - "&b/CustomEmojis reload &eReloads the configuration"
-    - "&b/emojis &eOpens the gui with all the emojis"
+command-usage:
+  - "&6_____________.[ &2Custom Emojis &6]._____________"
+  - "&b/CustomEmojis reload &eReloads the configuration"
+  - "&b/emojis &eOpens the gui with all the emojis"
 
+reload-success: "&2&lCustomEmojis &8» &fhas been reloaded &asuccessfully"
 
-  reload-success: "&7Custom Emojis has been reloaded &asuccessfully"
+permission:
+  command: customemojis.use
 
-  Gui:
-    open-message: "&aOpening Emojis GUI"
-    # NOT FUNCTIONAL:
-    Title: "Emojis (Page {page}/{totalPages})"
-    BorderItemName: " "
-    EmojiItem:
-      Name: "Emoji: {emojiName}"
-      Lore:
-        - "Before: {emojiName}"
-        - "After: {emojiReplaced}"
-    PreviousPageButton:
-      Name: "Previous Page"
-    NextPageButton:
-      Name: "Next Page"
-    HeaderItem:
-      Name: "Emoji List"
-      Lore:
-        - "Browse through the emoji list!"
-        - "Page {page} of {totalPages}"
+Gui:
+  open-message: "&2&lCustomEmojis &8» &fOpening GUI"
+  # NOT FUNCTIONAL:
+  Title: "Emojis (Page {page}/{totalPages})"
+  BorderItemName: " "
+  EmojiItem:
+    Name: "Emoji: {emojiName}"
+    Lore:
+      - "Before: {emojiName}"
+      - "After: {emojiReplaced}"
+  PreviousPageButton:
+    Name: "Previous Page"
+  NextPageButton:
+    Name: "Next Page"
+  HeaderItem:
+    Name: "Emoji List"
+    Lore:
+      - "Browse through the emoji list!"
+      - "Page {page} of {totalPages}"
 
 Emojis:
   - ":skull:->&4☠&r"
@@ -61,4 +62,3 @@ Emojis:
   - ":sloth:->&6(&8・&6⊝&8・&6)&r"
   - ":cute:->&e(&a✿&e◠‿◠)&r"
   - ":dog:->&6(ᵔᴥᵔ)&r"
-

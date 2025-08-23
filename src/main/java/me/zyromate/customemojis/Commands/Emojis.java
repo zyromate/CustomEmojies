@@ -34,7 +34,7 @@ public class Emojis implements CommandExecutor {
 
                 emojiGUI.openEmojiGui(player, 0);
 
-                String openMessage = config.getString("CustomEmojis.Gui.open-message");
+                String openMessage = config.getString("Gui.open-message");
                 Chatutils.sendMessage(player, openMessage);
                 return true;
             } else {

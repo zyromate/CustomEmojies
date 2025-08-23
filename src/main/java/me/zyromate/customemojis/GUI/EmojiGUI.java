@@ -146,7 +146,7 @@ public class EmojiGUI implements Listener {
         ItemStack borderItem = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) 7);
         ItemMeta borderMeta = borderItem.getItemMeta();
         if (borderMeta != null) {
-            String borderName = config.getString("CustomEmojis.Gui.BorderItemName");
+            String borderName = config.getString("Gui.BorderItemName");
             borderMeta.setDisplayName(borderName != null ? borderName : " ");
         }
         borderItem.setItemMeta(borderMeta);
@@ -162,12 +162,12 @@ public class EmojiGUI implements Listener {
         ItemStack emojiItem = new ItemStack(Material.PAPER);
         ItemMeta meta = emojiItem.getItemMeta();
         if (meta != null) {
-            String itemName = config.getString("CustomEmojis.Gui.EmojiItem.Name")
+            String itemName = config.getString("Gui.EmojiItem.Name")
                     .replace("{emojiName}", before);
             meta.setDisplayName(itemName);
 
             List<String> lore = new ArrayList<>();
-            lore.add(config.getString("CustomEmojis.Gui.EmojiItem.Lore")
+            lore.add(config.getString("Gui.EmojiItem.Lore")
                     .replace("{emojiName}", before)
                     .replace("{emojiReplaced}", after));
             meta.setLore(lore);
@@ -181,7 +181,7 @@ public class EmojiGUI implements Listener {
         ItemStack button = new ItemStack(Material.ARROW);
         ItemMeta meta = button.getItemMeta();
         if (meta != null) {
-            String buttonName = config.getString("CustomEmojis.Gui." + name + "PageButton.Name");
+            String buttonName = config.getString("Gui." + name + "PageButton.Name");
             buttonName = buttonName != null ? buttonName : (name.equals("Previous") ? ChatColor.YELLOW + "Previous Page" : ChatColor.YELLOW + "Next Page");
             meta.setDisplayName(buttonName);
             button.setItemMeta(meta);
@@ -193,11 +193,11 @@ public class EmojiGUI implements Listener {
         ItemStack headerItem = new ItemStack(Material.BOOK);
         ItemMeta headerMeta = headerItem.getItemMeta();
         if (headerMeta != null) {
-            String itemName = config.getString("CustomEmojis.Gui.HeaderItem.Name");
+            String itemName = config.getString("Gui.HeaderItem.Name");
             itemName = itemName != null ? itemName : ChatColor.GOLD + "Emoji List";
             headerMeta.setDisplayName(itemName);
             List<String> headerLore = new ArrayList<>();
-            headerLore.add(config.getString("CustomEmojis.Gui.HeaderItem.Lore")
+            headerLore.add(config.getString("Gui.HeaderItem.Lore")
                     .replace("{page}", String.valueOf(page + 1))
                     .replace("{totalPages}", String.valueOf(totalPages)));
             headerItem.setItemMeta(headerMeta);

@@ -14,15 +14,15 @@ import java.util.List;
 
 public class Chat implements Listener {
 
-    public static List<String> emojiList = new ArrayList<>(); // Made it public so EmojiGUI can access it
+    public static List<String> emojiList = new ArrayList<>();
     private final HashMap<String, String> emojiMap = new HashMap<>();
+    FileConfiguration config = Bukkit.getPluginManager().getPlugin("CustomEmojis").getConfig();
 
     public Chat(CustomEmojis customEmojis) {
         loadEmojis();
     }
 
     public void loadEmojis() {
-        FileConfiguration config = Bukkit.getPluginManager().getPlugin("CustomEmojis").getConfig();
         List<String> emojiConfigList = config.getStringList("Emojis");
         emojiMap.clear();
         emojiList.clear();
@@ -43,7 +43,8 @@ public class Chat implements Listener {
     @EventHandler
     public void onPlayerChat(AsyncPlayerChatEvent event) {
         Player p = event.getPlayer();
-        if (!p.hasPermission("customemojis.use")) return;
+        String Permission = config.getString("permission.command");
+        if (!p.hasPermission(Permission)) return;
         String message = event.getMessage();
 
         for (String key : emojiMap.keySet()) {
@@ -52,7 +53,6 @@ public class Chat implements Listener {
                 message = message.replace(key, emoji);
             }
         }
-
         event.setMessage(message);
     }
 }
