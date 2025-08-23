@@ -1,7 +1,7 @@
 # 🎭 CustomEmojis
 
-![GitHub all releases](https://img.shields.io/github/downloads/zyromate/CustomEmojies/total?color=brightgreen&label=Downloads)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/zyromate/CustomEmojies?label=Latest%20Release)
+[![GitHub all releases](https://img.shields.io/github/downloads/zyromate/CustomEmojies/total?color=brightgreen&label=Downloads)](https://github.com/zyromate/CustomEmojies/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/zyromate/CustomEmojies?label=Latest%20Release)](https://github.com/zyromate/CustomEmojies/releases)
 
 A lightweight **Minecraft Spigot plugin** that brings customizable chat emojis and an interactive GUI menu for players.  
 
