@@ -112,7 +112,8 @@ Emojis:
 
 ## 📸 Preview  
 
-🟢 **Chat replacement**  
+<img width="399" height="36" alt="image" src="https://github.com/user-attachments/assets/87598d01-dade-4174-9210-b072b829e2d3" />
+
 
 
 🟢 **Emoji GUI**  
