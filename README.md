@@ -45,33 +45,35 @@ A lightweight **Minecraft Spigot plugin** that brings customizable chat emojis a
 ## ⚙️ Default Configuration (`config.yml`)  
 
 ```yaml
-CustomEmojis:
-  command-usage:
-    - "&6_____________.[ &2Custom Emojis &6]._____________"
-    - "&b/CustomEmojis reload &eReloads the configuration"
-    - "&b/emojis &eOpens the gui with all the emojis"
+command-usage:
+  - "&6_____________.[ &2Custom Emojis &6]._____________"
+  - "&b/CustomEmojis reload &eReloads the configuration"
+  - "&b/emojis &eOpens the gui with all the emojis"
 
-  reload-success: "&7Custom Emojis has been reloaded &asuccessfully"
+reload-success: "&2&lCustomEmojis &8» &fhas been reloaded &asuccessfully"
 
-  Gui:
-    open-message: "&aOpening Emojis GUI"
-    # NOT FUNCTIONAL:
-    Title: "Emojis (Page {page}/{totalPages})"
-    BorderItemName: " "
-    EmojiItem:
-      Name: "Emoji: {emojiName}"
-      Lore:
-        - "Before: {emojiName}"
-        - "After: {emojiReplaced}"
-    PreviousPageButton:
-      Name: "Previous Page"
-    NextPageButton:
-      Name: "Next Page"
-    HeaderItem:
-      Name: "Emoji List"
-      Lore:
-        - "Browse through the emoji list!"
-        - "Page {page} of {totalPages}"
+permission:
+  command: customemojis.use
+
+Gui:
+  open-message: "&2&lCustomEmojis &8» &fOpening GUI"
+  # NOT FUNCTIONAL:
+  Title: "Emojis (Page {page}/{totalPages})"
+  BorderItemName: " "
+  EmojiItem:
+    Name: "Emoji: {emojiName}"
+    Lore:
+      - "Before: {emojiName}"
+      - "After: {emojiReplaced}"
+  PreviousPageButton:
+    Name: "Previous Page"
+  NextPageButton:
+    Name: "Next Page"
+  HeaderItem:
+    Name: "Emoji List"
+    Lore:
+      - "Browse through the emoji list!"
+      - "Page {page} of {totalPages}"
 
 Emojis:
   - ":skull:->&4☠&r"
