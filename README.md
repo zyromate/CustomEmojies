@@ -6,7 +6,7 @@ A lightweight **Minecraft Spigot plugin** that brings customizable chat emojis a
 
 ## ✨ Features  
 
-- 🔑 **Permission-based emojis** → Only players with `customemojis.use` can use emojis in chat.  
+- 🔑 **Permission-based emojis** → Only players with `customemojis.use` (Configurable) can use emojis in chat.  
 - ⚡ **Configurable emojis** → Define replacements directly in `config.yml` (`:smile: -> 😄`).  
 - 📖 **Emoji GUI** → Browse emojis with a fully paginated GUI (`/emojis`).  
 - 🛠️ **Reload support** → Reload config instantly with `/customemojis reload`.  
@@ -21,7 +21,7 @@ A lightweight **Minecraft Spigot plugin** that brings customizable chat emojis a
 2. Drop it into your server’s `plugins/` folder.  
 3. Start (or restart) your server.  
 4. Configure emojis inside `config.yml`.  
-5. Reload with `/customemojis reload`.  
+5. Reload with `/customemojis reload`.
 
 ---
 
@@ -32,8 +32,16 @@ A lightweight **Minecraft Spigot plugin** that brings customizable chat emojis a
 | `/customemojis reload` | Reloads the configuration.               | `customemojis.reload`   |
 | `/emojis`              | Opens the emoji GUI with all available.  | `customemojis.use`      |
 
----
 
+
+## 📜 Permissions
+
+| Permission              | Description                           | Extra             |
+|--------------------------|---------------------------------------|-------------------|
+| `customemojis.use`      | Allows players to use emojis in chat. | Configurable      |
+| `customemojis.reload`   | Allows reloading the configuration.   | ----------------- |
+
+---
 ## ⚙️ Default Configuration (`config.yml`)  
 
 ```yaml
@@ -100,26 +108,17 @@ Emojis:
   - ":cute:->&e(&a✿&e◠‿◠)&r"
   - ":dog:->&6(ᵔᴥᵔ)&r"
 ```
-
-## 📜 Permissions  
-
-| Permission              | Description                           |
-|--------------------------|---------------------------------------|
-| `customemojis.use`      | Allows players to use emojis in chat. |
-| `customemojis.reload`   | Allows reloading the configuration.   |
-
 ---
-
 ## 📸 Preview  
 
 <img width="399" height="36" alt="image" src="https://github.com/user-attachments/assets/87598d01-dade-4174-9210-b072b829e2d3" />
-
-
 
 🟢 **Emoji GUI**  
 - Paginated menu with emojis as items.  
 - Navigation buttons (`Next Page` / `Previous Page`).  
 - Configurable header & border design.  
+
+![CustomEmojis Preview](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWxkOHN0azE2eng5MndiZmVtNTNuMWgxeG1yaG4xMXkzOTQydWoxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fhCTqVOwGwh4dpaPeq/giphy.gif)
 
 ---
 
