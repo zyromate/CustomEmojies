@@ -1,0 +1,30 @@
+name: ${project.name}
+main: me.zyromate.customemojis.CustomEmojis
+version: ${project.version}
+authors: [ Zyromate ]
+
+commands:
+  customemojis:
+    description: Command to reload emojis
+    usage: /customemojis reload
+    permission: customemojis.reload
+    permission-message: You do not have permission to reload emojis.
+    aliases: [customemojy, custome, cemoji, cemojy, customemojies, customemoji]
+
+  emojis:
+    description: Opens the emoji GUI.
+    usage: /emojis
+    permission: customemojis.gui
+    aliases: [emojies, emojis, emoji, emojy, emojys]
+
+permissions:
+  customemojis.reload:
+    description: Permission to reload emojis
+    default: op
+
+  customemojis.gui:
+    description: Permission to open the emoji GUI
+    default: op
+  customemojis.use:
+    description: Permission to use emojies...
+    default: op
