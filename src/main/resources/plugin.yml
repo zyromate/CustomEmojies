@@ -2,6 +2,8 @@ name: ${project.name}
 main: me.zyromate.customemojis.CustomEmojis
 version: ${project.version}
 authors: [ Zyromate ]
+depend:
+  - NBTAPI
 
 commands:
   customemojis:

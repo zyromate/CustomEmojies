@@ -10,23 +10,44 @@ permission:
 
 Gui:
   open-message: "&2&lCustomEmojis &8» &fOpening GUI"
-  # NOT FUNCTIONAL:
-  Title: "Emojis (Page {page}/{totalPages})"
+  Size: 54
+  MaxItemsPerPage: 28
+  Title: "&aEmojis (Page {page}/{totalPages})"
+  emoji-click-message: "&2&lCustomEmojis &8» &fYou clicked on emoji: &a{emojiName}"
+
+  BorderItem:
+    Material: "STAINED_GLASS_PANE"
+    Data: 7
   BorderItemName: " "
+
   EmojiItem:
-    Name: "Emoji: {emojiName}"
+    Material: "PAPER"
+    Name: "&cEmoji: &f{emojiName}"
     Lore:
-      - "Before: {emojiName}"
-      - "After: {emojiReplaced}"
+      - "&7Before: &f{emojiName}"
+      - "&7After: {emojiReplaced}"
+
+  NavigationButton:
+    Material: "ARROW"
+    Lore:
+      - ""
+      - "&fCurrent Page {page}/{totalPages}"
+
   PreviousPageButton:
-    Name: "Previous Page"
+    Name: "&ePrevious Page"
+    Slot: 45
+
   NextPageButton:
-    Name: "Next Page"
+    Name: "&eNext Page"
+    Slot: 53
+
   HeaderItem:
-    Name: "Emoji List"
+    Material: "BOOK"
+    Name: "&6Emoji List"
+    Slot: 4
     Lore:
-      - "Browse through the emoji list!"
-      - "Page {page} of {totalPages}"
+      - "&7Browse through the emoji list!"
+      - "&7Page {page} of {totalPages}"
 
 Emojis:
   - ":skull:->&4☠&r"

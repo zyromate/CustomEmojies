@@ -40,21 +40,38 @@
 
   <repositories>
       <repository>
-          <id>spigotmc-repo</id>
+          <id>spigot-repo</id>
           <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
       </repository>
       <repository>
-          <id>sonatype</id>
-          <url>https://oss.sonatype.org/content/groups/public/</url>
+          <id>bg-repo</id>
+          <url>https://repo.bg-software.com/repository/api/</url>
+      </repository>
+      <repository>
+          <id>jitpack.io</id>
+          <url>https://jitpack.io</url>
+      </repository>
+      <repository>
+          <id>codemc-repo</id>
+          <url>https://repo.codemc.io/repository/maven-public/</url>
+          <layout>default</layout>
       </repository>
   </repositories>
 
   <dependencies>
+      <!-- This is just a fork of spigot i like to use normal spigot works (1.8.8+) too -->
       <dependency>
-          <groupId>org.spigotmc</groupId>
-          <artifactId>spigot-api</artifactId>
-          <version>1.12-R0.1-SNAPSHOT</version>
-          <scope>provided</scope>
+          <groupId>com.golfing8.winespigot</groupId>
+          <artifactId>WineSpigot</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>C:/dev/wine.jar</systemPath>
+      </dependency>
+
+      <dependency>
+          <groupId>de.tr7zw</groupId>
+          <artifactId>item-nbt-api</artifactId>
+          <version>LATEST</version>
       </dependency>
   </dependencies>
 </project>

@@ -23,7 +23,7 @@ public final class CustomEmojis extends JavaPlugin {
         utility = new utils(this);
         utility.initialization("activated");
 
-        emojiGUI = new EmojiGUI(config);
+        emojiGUI = new EmojiGUI(config, utility);
 
         Registers();
     }
