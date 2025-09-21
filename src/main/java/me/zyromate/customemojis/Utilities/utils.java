@@ -54,6 +54,8 @@ public class utils {
     public void initialization(String message) {
         plugin.getServer().getConsoleSender().sendMessage(ChatColor.RED + "-------------------------");
         plugin.getServer().getConsoleSender().sendMessage(ChatColor.RED + "");
+        plugin.getServer().getConsoleSender().sendMessage(ChatColor.DARK_RED + "  Custom Emojis");
+        plugin.getServer().getConsoleSender().sendMessage(ChatColor.RED + "");
         plugin.getServer().getConsoleSender().sendMessage(ChatColor.RED + "  Status: " + ChatColor.DARK_RED + message);
         plugin.getServer().getConsoleSender().sendMessage(ChatColor.RED + "  Version: " + ChatColor.DARK_RED + pluginVersion);
         plugin.getServer().getConsoleSender().sendMessage(ChatColor.RED + "  Author: " + ChatColor.DARK_RED + "Zyromate");
